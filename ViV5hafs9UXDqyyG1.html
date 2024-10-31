@@ -1,0 +1,139 @@
+l<html><head><base href="." />
+<meta charset="UTF-8">
+<title>Pack de Desenvolvimento Pessoal</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+        color: #ffffff;
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 48px;
+        margin: 40px 0;
+        animation: neonText 1.5s ease-in-out infinite alternate;
+        text-transform: uppercase;
+    }
+
+    .description {
+        font-size: 24px;
+        margin: 30px 0;
+        animation: colorChange 3s infinite;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .price {
+        font-size: 36px;
+        margin: 20px 0;
+        text-decoration: line-through;
+        color: #ff0000;
+    }
+
+    .discounted-price {
+        font-size: 48px;
+        color: #00ff00;
+        margin: 20px 0;
+    }
+
+    .buy-button {
+        display: inline-block;
+        padding: 20px 40px;
+        font-size: 24px;
+        background: linear-gradient(45deg, #ff0000, #ff3333);
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        margin: 20px 0;
+        animation: pulseButton 2s infinite;
+        transition: transform 0.3s;
+    }
+
+    .buy-button:hover {
+        transform: scale(1.1);
+    }
+
+    .extra-info {
+        font-size: 20px;
+        color: #ff0066;
+        margin: 20px 0;
+        animation: neonPulse 1.5s infinite;
+    }
+
+    .social-link {
+        color: #ff0000;
+        text-decoration: none;
+        font-size: 24px;
+        margin: 20px 0;
+        display: inline-block;
+        animation: neonText 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes neonText {
+        from {
+            text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+        }
+        to {
+            text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000;
+        }
+    }
+
+    @keyframes colorChange {
+        0% { color: #ff0000; }
+        50% { color: #ff3333; }
+        100% { color: #ff0000; }
+    }
+
+    @keyframes pulseButton {
+        0% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7); }
+        70% { box-shadow: 0 0 0 20px rgba(255, 0, 0, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0); }
+    }
+
+    @keyframes neonPulse {
+        0% { opacity: 0.5; }
+        50% { opacity: 1; }
+        100% { opacity: 0.5; }
+    }
+
+    .video-container {
+        margin: 40px auto;
+        max-width: 600px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Pack de Desenvolvimento Pessoal</h1>
+        
+        <div class="description">
+            "Não viva como O MENORES DOS HUMANOS<br>
+            Viva como O MAIORES DOS HUMANO!"
+        </div>
+
+        <div class="video-container">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/z2efB2wfRu8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="price">R$ 97,00</div>
+        <div class="discounted-price">R$ 27,90</div>
+
+        <a href="https://pay.cakto.com.br/4WDFKam" class="buy-button">COMPRE AQUI!</a>
+
+        <div class="extra-info">+ EBOOK EXTRA!</div>
+
+        <a href="https://www.instagram.com/emerson_calistro_oficial/" class="social-link">
+            Siga-nos no Instagram
+        </a>
+    </div>
+</body>
+</html>
